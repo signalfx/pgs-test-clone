@@ -1,0 +1,2127 @@
+[ {
+  "marshallScope" : 2
+}, {
+  "marshallId" : 1,
+  "sf_description" : "Metrics about Amazon Auto Scaling.",
+  "sf_service" : "Amazon AutoScaling",
+  "sf_type" : "Service"
+}, {
+  "marshallId" : 2,
+  "marshallMemberOf" : [ 1 ],
+  "sf_description" : "Dashboards about Amazon Auto Scaling.",
+  "sf_page" : "AWS AutoScaling",
+  "sf_type" : "Page"
+}, {
+  "marshallId" : 3,
+  "marshallMemberOf" : [ 2 ],
+  "sf_dashboard" : "AutoScaling - Single Group",
+  "sf_description" : "",
+  "sf_discoveryQuery" : "namespace:\"AWS/AutoScaling\" AND _exists_:AutoScalingGroupName",
+  "sf_discoverySelectors" : [ "sf_key:AutoScalingGroupName", "namespace:AWS/AutoScaling" ],
+  "sf_filterAlias" : {
+    "variables" : [ {
+      "alias" : "AutoScaling group",
+      "description" : "AutoScaling group",
+      "dimension" : "AutoScalingGroupName",
+      "globalScope" : true,
+      "preferredSuggestions" : [ ],
+      "required" : true,
+      "restricted" : false
+    } ]
+  },
+  "sf_type" : "Dashboard",
+  "sf_uiModel" : {
+    "version" : 1,
+    "widgets" : [ {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1441994916484,
+        "id" : 1,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 0,
+      "sizeX" : 4,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 4,
+      "options" : {
+        "chartIndex" : 1441995092910,
+        "id" : 2,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 0,
+      "sizeX" : 4,
+      "type" : "chart"
+    }, {
+      "col" : 8,
+      "options" : {
+        "chartIndex" : 1441995273237,
+        "id" : 3,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 0,
+      "sizeX" : 4,
+      "type" : "chart"
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartIndex" : 1442968920644,
+        "id" : 4,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 1,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1441995352846,
+        "id" : 5,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 1,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartIndex" : 1442968168550,
+        "id" : 6,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 2,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1441995437760,
+        "id" : 7,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 2,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartIndex" : 1442969096133,
+        "id" : 8,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 3,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1441995541454,
+        "id" : 9,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 3,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    } ]
+  }
+}, {
+  "marshallId" : 4,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "GroupMaxSize",
+  "sf_chartIndex" : 1441995092910,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupMaxSize",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupMaxSize"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "forcedResolution" : "0",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 7,
+    "uiHelperValue" : "##CHARTID##_7"
+  }
+}, {
+  "marshallId" : 5,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "Total Pending Instances per Interval",
+  "sf_chartIndex" : 1442968168550,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupPendingInstances",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupPendingInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "area",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "forcedResolution" : "0",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "label" : "# instances",
+        "max" : null,
+        "min" : 0,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 12,
+    "uiHelperValue" : "##CHARTID##_12"
+  }
+}, {
+  "marshallId" : 6,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "In Service Instances",
+  "sf_chartIndex" : 1441995352846,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupInServiceInstances",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupInServiceInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "forcedResolution" : "0",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 11,
+    "uiHelperValue" : "##CHARTID##_11"
+  }
+}, {
+  "marshallId" : 7,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "Total Terminating Instances per Period",
+  "sf_chartIndex" : 1442969096133,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupTerminatingInstances",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupTerminatingInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "area",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "forcedResolution" : "0",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "label" : "# instances",
+        "max" : null,
+        "min" : 0,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 9,
+    "uiHelperValue" : "##CHARTID##_9"
+  }
+}, {
+  "marshallId" : 8,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "Total Terminating Instances",
+  "sf_chartIndex" : 1441995541454,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupTerminatingInstances",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupTerminatingInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "forcedResolution" : "0",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 9,
+    "uiHelperValue" : "##CHARTID##_9"
+  }
+}, {
+  "marshallId" : 9,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "Total Pending Instances",
+  "sf_chartIndex" : 1441995437760,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupPendingInstances",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupPendingInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 7,
+    "uiHelperValue" : "##CHARTID##_7"
+  }
+}, {
+  "marshallId" : 10,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "In Service Instances per Period",
+  "sf_chartIndex" : 1442968920644,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupInServiceInstances",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupInServiceInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "area",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "forcedResolution" : "0",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "label" : "# instances",
+        "max" : null,
+        "min" : 0,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 12,
+    "uiHelperValue" : "##CHARTID##_12"
+  }
+}, {
+  "marshallId" : 11,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "GroupMinSize",
+  "sf_chartIndex" : 1441994916484,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupMinSize",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupMinSize"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 6,
+    "uiHelperValue" : "##CHARTID##_6"
+  }
+}, {
+  "marshallId" : 12,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "GroupDesiredCapacity",
+  "sf_chartIndex" : 1441995273237,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupDesiredCapacity",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "AutoScalingGroupName",
+        "propertyValue" : "EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE",
+        "query" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\"",
+        "type" : "property",
+        "value" : "AutoScalingGroupName:\"EC2ContainerService-default-439766bb-17a3-41cb-9e17-134df785fafe-EcsInstanceAsg-ZI6N93VA0FRE\""
+      } ],
+      "seriesData" : {
+        "metric" : "GroupDesiredCapacity"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "disableThrottle" : false,
+      "forcedResolution" : "0",
+      "maxDecimalPlaces" : 2,
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 7,
+    "uiHelperValue" : "##CHARTID##_7"
+  }
+}, {
+  "marshallId" : 13,
+  "marshallMemberOf" : [ 2 ],
+  "sf_dashboard" : "AutoScaling - Multi Group",
+  "sf_description" : "",
+  "sf_discoveryQuery" : "namespace:\"AWS/AutoScaling\" AND _exists_:AutoScalingGroupName",
+  "sf_discoverySelectors" : [ "sf_key:AutoScalingGroupName", "namespace:AWS/AutoScaling" ],
+  "sf_type" : "Dashboard",
+  "sf_uiModel" : {
+    "version" : 1,
+    "widgets" : [ {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1442967689243,
+        "id" : 1,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 0,
+      "sizeX" : 4,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 4,
+      "options" : {
+        "chartIndex" : 1441995645556,
+        "id" : 3,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 0,
+      "sizeX" : 4,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 8,
+      "options" : {
+        "chartIndex" : 1442967898041,
+        "id" : 2,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 0,
+      "sizeX" : 4,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartIndex" : 1442968920644,
+        "id" : 4,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 1,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1441995352846,
+        "id" : 5,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 1,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartIndex" : 1442968168550,
+        "id" : 6,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 2,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1441995437760,
+        "id" : 7,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 2,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1441995541454,
+        "id" : 10,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 3,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartIndex" : 1442969096133,
+        "id" : 12,
+        "name" : "",
+        "type" : "chart"
+      },
+      "row" : 3,
+      "sizeX" : 6,
+      "sizeY" : 1,
+      "type" : "chart"
+    } ]
+  }
+}, {
+  "marshallId" : 14,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "In Service Instances per Period",
+  "sf_chartIndex" : 1442968920644,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupInServiceInstances - Mean by AutoScalingGroupName - Sum",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupInServiceInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "area",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "histogramColor" : "#ea1849",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "label" : "# instances",
+        "max" : null,
+        "min" : 0,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 12,
+    "uiHelperValue" : "##CHARTID##_12"
+  }
+}, {
+  "marshallId" : 15,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Total # Instances",
+  "sf_chartIndex" : 1441995645556,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupTotalInstances - Mean by AutoScalingGroupName - Sum",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupTotalInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
+      "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 7,
+    "uiHelperValue" : "##CHARTID##_7"
+  }
+}, {
+  "marshallId" : 16,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Total Pending Instances per Interval",
+  "sf_chartIndex" : 1442968168550,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupPendingInstances - Mean by AutoScalingGroupName - Sum",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupPendingInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "area",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "histogramColor" : "#ea1849",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "label" : "# instances",
+        "max" : null,
+        "min" : 0,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 12,
+    "uiHelperValue" : "##CHARTID##_12"
+  }
+}, {
+  "marshallId" : 17,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Top Groups by # Instances",
+  "sf_chartIndex" : 1442967898041,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : {
+            "count" : 5
+          },
+          "type" : "TOPN"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupTotalInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "list",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "forcedResolution" : "0",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "sortPreference" : "-value",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 6,
+    "uiHelperValue" : "##CHARTID##_6"
+  }
+}, {
+  "marshallId" : 18,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "# AutoScaling Groups",
+  "sf_chartIndex" : 1442967689243,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "COUNT"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupTotalInstances - Count by AutoScalingGroupName - Sum",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupTotalInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
+      "colorByValueScale" : [ ],
+      "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 11,
+    "uiHelperValue" : "##CHARTID##_11"
+  }
+}, {
+  "marshallId" : 19,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Total Terminating Instances",
+  "sf_chartIndex" : 1441995541454,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupTerminatingInstances - Mean by AutoScalingGroupName - Sum",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupTerminatingInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
+      "forcedResolution" : "0",
+      "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 8,
+    "uiHelperValue" : "##CHARTID##_8"
+  }
+}, {
+  "marshallId" : 20,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Total Terminating Instances per Period",
+  "sf_chartIndex" : 1442969096133,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupTerminatingInstances - Mean by AutoScalingGroupName - Sum",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupTerminatingInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "area",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "histogramColor" : "#ea1849",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "label" : "# instances",
+        "max" : null,
+        "min" : 0,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 9,
+    "uiHelperValue" : "##CHARTID##_9"
+  }
+}, {
+  "marshallId" : 21,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "Total Pending Instances",
+  "sf_chartIndex" : 1441995437760,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupPendingInstances - Mean by AutoScalingGroupName - Sum",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupPendingInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
+      "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 7,
+    "uiHelperValue" : "##CHARTID##_7"
+  }
+}, {
+  "marshallId" : 22,
+  "marshallMemberOf" : [ 13 ],
+  "sf_chart" : "In Service Instances",
+  "sf_chartIndex" : 1441995352846,
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "AutoScalingGroupName"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "GroupInServiceInstances - Mean by AutoScalingGroupName - Sum",
+      "queryItems" : [ {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "stat",
+        "propertyValue" : "mean",
+        "query" : "stat:mean",
+        "type" : "property",
+        "value" : "mean"
+      }, {
+        "NOT" : false,
+        "iconClass" : "icon-properties",
+        "property" : "namespace",
+        "propertyValue" : "AWS/AutoScaling",
+        "query" : "namespace:\"AWS/AutoScaling\"",
+        "type" : "property",
+        "value" : "AWS/AutoScaling"
+      } ],
+      "seriesData" : {
+        "metric" : "GroupInServiceInstances"
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "focusNext" : false,
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 2,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "single",
+    "chartType" : "line",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
+      "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
+      "range" : -7200000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "max" : null,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 3,
+    "revisionNumber" : 10,
+    "uiHelperValue" : "##CHARTID##_10"
+  }
+} ]

@@ -1,0 +1,23 @@
+[ {
+  "marshallScope" : 2
+}, {
+  "sf_description" : "Sample data",
+  "sf_type" : "Service",
+  "sf_service" : "FTUX",
+  "marshallId" : 1
+}, {
+  "sf_page" : "Sample Data",
+  "sf_description" : "Tutorial dashboards using sample data",
+  "sf_type" : "Page",
+  "marshallId" : 2,
+  "marshallMemberOf" : [ 1 ]
+}, {
+  "sf_dashboard" : "Your first dashboard",
+  "sf_uiModel" : {
+    "widgets" : [ ],
+    "version" : 1
+  },
+  "sf_type" : "Dashboard",
+  "marshallId" : 3,
+  "marshallMemberOf" : [ 2 ]
+} ]
