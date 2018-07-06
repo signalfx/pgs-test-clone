@@ -3,7 +3,7 @@
 }, {
   "marshallId" : 1,
   "sf_description" : "",
-  "sf_service" : "GCP Bigtable",
+  "sf_service" : "GCP Bigtables",
   "sf_type" : "Service"
 }, {
   "marshallId" : 2,
